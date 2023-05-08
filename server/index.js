@@ -20,7 +20,10 @@ const connection=mysql.createConnection({
     host:'uwtstdb.mysql.database.azure.com',
     user:'remoteuser',
     password:'Skeptic7301?',
-    database:'UWTSD'
+    database:'UWTSD',
+    ssl: {
+      cert: fs.readFileSync('DigiCertGlobalRootCA.crt.pem')
+    }
 })
 
 connection.connect((error)=>{
