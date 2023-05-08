@@ -23,7 +23,7 @@ const connection=mysql.createConnection({
     password:'Skeptic7301?',
     database:'UWTSD',
     ssl: {
-      cert: fs.readFileSync(path.join(__dirname, '../server/DigiCertGlobalRootCA.crt.pem')
+      cert: fs.readFileSync(path.join(__dirname, 'DigiCertGlobalRootCA.crt.pem')
     }
 })
 
