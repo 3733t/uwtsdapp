@@ -49,9 +49,9 @@ function BookHostel(){
         <div class="col-sm-3 border">
         <input  type={"text"} placeholder="Enter ID" className={"rounded m-2 w-50 " } onChange={(event)=>{
            value.studentId=event.target.value
-        }} disabled={value.booked!=="false"}></input>
+        }} disabled={value.booked!="false"}></input>
         <input type={"button"} value="Book" className="rounded " onClick={()=>{
-            if(value.booked===false)
+            if(value.booked==false)
             bookHostel(value)
             else
             alert("already Booked!")
