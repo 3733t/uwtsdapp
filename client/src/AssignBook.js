@@ -43,7 +43,7 @@ function AssignBooks(){
 
 
 {
-   Array.isArry(bookList) && bookList.map((value )=>{
+   Array.isArray(bookList) && bookList.map((value )=>{
         return (
 <div class="row">
     <div class="col-sm-2 border">{value.id}</div>
