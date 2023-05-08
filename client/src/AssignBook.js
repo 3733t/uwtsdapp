@@ -6,7 +6,7 @@ function AssignBooks(){
     const [bookList, setBookList]=useState([])
     const [update,setUpdate]=useState(false)
     useEffect(()=>{
-         axios.get('http://localhost:4001/api/library/assign')
+         axios.get('http://localhost:8080/api/library/assign')
          .then(response=>{
              setBookList(response.data)
          }).catch(error=>{
@@ -21,8 +21,8 @@ function AssignBooks(){
             borrowed:"true",
            StudentID:obj.StudentID
         }
-        axios.put(`http://localhost:8080/api/library/assign/${obj.id}`,data).
-        then(response=>{
+        axios.put(`http://localhost:8080/api/library/assign/${obj.id}`,data)
+        .then(response=>{
             alert(response.data)
             setUpdate(true)
         }).catch(error=>{
@@ -43,7 +43,7 @@ function AssignBooks(){
 
 
 {
-    bookList.map((value )=>{
+   Array.isArry(bookList) && bookList.map((value )=>{
         return (
 <div class="row">
     <div class="col-sm-2 border">{value.id}</div>

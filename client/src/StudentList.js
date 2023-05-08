@@ -27,7 +27,7 @@ function StudentList(){
 </div>
 
 {
-    studentList.map(value=>{
+    Array.isArray(studentList) && studentList.map(value=>{
     return (<div class="row">
         <div class="col-sm-3 border">{value.id}</div>
         <div class="col-sm-3 border">{value.firstName}</div>

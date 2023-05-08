@@ -27,7 +27,7 @@ function BookCollection(){
 
 {
 
-    bookList.map(value=>{
+    Array.isArray(bookList) && bookList.map(value=>{
         return (
    <div class="row">
     <div class="col-sm-3 border fs-5">{value.id}</div>

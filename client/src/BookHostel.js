@@ -20,7 +20,7 @@ function BookHostel(){
             studentId:value.studentId
          }
 
-         axios.put(`http://localhost:4001/api/hostel/assign/${value.id}`,data)
+         axios.put(`http://localhost:8080/api/hostel/assign/${value.id}`,data)
          .then(response=>{
            alert(response.data)
          }).catch(error=>{
@@ -40,7 +40,7 @@ function BookHostel(){
 
 {
 
-    hostelList.map((value)=>{
+   Array.isArray(hostelList) && hostelList.map((value)=>{
 
         return (<div class="row">
         <div class="col-sm-3 border">{value.id}</div>
@@ -49,9 +49,9 @@ function BookHostel(){
         <div class="col-sm-3 border">
         <input  type={"text"} placeholder="Enter ID" className={"rounded m-2 w-50 " } onChange={(event)=>{
            value.studentId=event.target.value
-        }} disabled={value.booked!="false"}></input>
+        }} disabled={value.booked!=="false"}></input>
         <input type={"button"} value="Book" className="rounded " onClick={()=>{
-            if(value.booked==false)
+            if(value.booked===false)
             bookHostel(value)
             else
             alert("already Booked!")
