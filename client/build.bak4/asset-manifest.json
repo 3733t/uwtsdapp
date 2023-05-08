@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2b149342.css",
+    "main.js": "/static/js/main.5277245f.js",
+    "static/media/phoenix-36-logo.png": "/static/media/phoenix-36-logo.391c13ba45b6db12530e.png",
+    "index.html": "/index.html",
+    "main.2b149342.css.map": "/static/css/main.2b149342.css.map",
+    "main.5277245f.js.map": "/static/js/main.5277245f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b149342.css",
+    "static/js/main.5277245f.js"
+  ]
+}
