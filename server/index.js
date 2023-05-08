@@ -17,7 +17,7 @@ app.get('*', (req, res) => {
 });
 
 const connection=mysql.createConnection({
-    host:'192.168.100.213',
+    host:'uwtdb.mysql.database.azure.com',
     user:'remoteuser',
     password:'Skeptic7301?',
     database:'UWTSD'
