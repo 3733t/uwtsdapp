@@ -6,7 +6,7 @@ function BookHostel(){
 
     const [hostelList,setHostelList]=useState([])
     useEffect(()=>{
-        axios.get('http://localhost:4001/api/hostel').then(response=>{
+        axios.get('http://localhost:8080/api/hostel').then(response=>{
             setHostelList(response.data)
        }).catch(error=>{
            console.log(error.message)
@@ -46,7 +46,7 @@ function BookHostel(){
         <div class="col-sm-3 border">{value.id}</div>
         <div class="col-sm-3 border">{value.hostelName}</div>
         <div class="col-sm-3 border">{value.hostelNumber}</div>
-        <div class="col-sm-3 border">  
+        <div class="col-sm-3 border">
         <input  type={"text"} placeholder="Enter ID" className={"rounded m-2 w-50 " } onChange={(event)=>{
            value.studentId=event.target.value
         }} disabled={value.booked!="false"}></input>
@@ -55,7 +55,7 @@ function BookHostel(){
             bookHostel(value)
             else
             alert("already Booked!")
-            
+
             }}></input></div>
     </div>)
     })

@@ -21,7 +21,7 @@ function AssignBooks(){
             borrowed:"true",
            StudentID:obj.StudentID
         }
-        axios.put(`http://localhost:4001/api/library/assign/${obj.id}`,data).
+        axios.put(`http://localhost:8080/api/library/assign/${obj.id}`,data).
         then(response=>{
             alert(response.data)
             setUpdate(true)

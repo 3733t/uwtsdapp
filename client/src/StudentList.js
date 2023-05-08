@@ -5,8 +5,8 @@ function StudentList(){
 
     const [studentList,setStudentList]=useState([])
     useEffect(()=>{
-    
-        axios.get('http://localhost:4001/api/students').then(response=>{
+
+        axios.get('http://localhost:8080/api/students').then(response=>{
 
         console.log(response.data)
         setStudentList(response.data)
@@ -15,7 +15,7 @@ function StudentList(){
         })
 
     },[])
-    
+
     return <div className="container-fluid d-flex flex-column">
     <div className="row container-sm bg-light align-self-center m-2 rounded p-2">
 
