@@ -7,7 +7,7 @@ function BookCollection(){
     const [bookList, setBookList]=useState([])
     useEffect(()=>{
 
-         axios.get('http://localhost:8080/api/library')
+         axios.get('https://utwsdapp1.azurewebsites.net/:8080/api/library')
          .then(response=>{
 
              setBookList(response.data)
