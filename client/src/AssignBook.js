@@ -21,7 +21,7 @@ function AssignBooks(){
             borrowed:"true",
            StudentID:obj.StudentID
         }
-        axios.put(`http://localhost:8080/api/library/assign/${obj.id}`,data)
+        axios.put(`https://utwsdapp1.azurewebsites.net:8080/api/library/assign/${obj.id}`,data)
         .then(response=>{
             alert(response.data)
             setUpdate(true)
