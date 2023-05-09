@@ -21,7 +21,7 @@ function StudentRegistration(){
         password:password
        }
 
-        axios.post('https://utwsdapp1.azurewebsites.net:8080/api/students',
+        axios.post('https://utwsdapp1.azurewebsites.net/api/students',
         data)
          .then(response=>{
            alert(response.data)

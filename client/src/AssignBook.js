@@ -6,7 +6,7 @@ function AssignBooks(){
     const [bookList, setBookList]=useState([])
     const [update,setUpdate]=useState(false)
     useEffect(()=>{
-         axios.get('http://localhost:8080/api/library/assign')
+         axios.get('https://utwsdapp1.azurewebsites.net/api/library/assign')
          .then(response=>{
              setBookList(response.data)
          }).catch(error=>{
@@ -21,7 +21,7 @@ function AssignBooks(){
             borrowed:"true",
            StudentID:obj.StudentID
         }
-        axios.put(`https://utwsdapp1.azurewebsites.net:8080/api/library/assign/${obj.id}`,data)
+        axios.put(`https://utwsdapp1.azurewebsites.net/api/library/assign/${obj.id}`,data)
         .then(response=>{
             alert(response.data)
             setUpdate(true)
