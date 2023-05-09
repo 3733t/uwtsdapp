@@ -6,7 +6,7 @@ function BookHostel(){
 
     const [hostelList,setHostelList]=useState([])
     useEffect(()=>{
-        axios.get('http://localhost:8080/api/hostel').then(response=>{
+        axios.get('https://utwsdapp1.azurewebsites.net:8080/api/hostel').then(response=>{
             setHostelList(response.data)
        }).catch(error=>{
            console.log(error.message)
@@ -20,7 +20,7 @@ function BookHostel(){
             studentId:value.studentId
          }
 
-         axios.put(`http://localhost:8080/api/hostel/assign/${value.id}`,data)
+         axios.put(`https://utwsdapp1.azurewebsites.net:8080/api/hostel/assign/${value.id}`,data)
          .then(response=>{
            alert(response.data)
          }).catch(error=>{

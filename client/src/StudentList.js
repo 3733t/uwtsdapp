@@ -6,7 +6,7 @@ function StudentList(){
     const [studentList,setStudentList]=useState([])
     useEffect(()=>{
 
-        axios.get('http://localhost:8080/api/students').then(response=>{
+        axios.get('https://utwsdapp1.azurewebsites.net:8080/api/students').then(response=>{
 
         console.log(response.data)
         setStudentList(response.data)
