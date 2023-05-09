@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.2b149342.css",
-    "main.js": "/static/js/main.84c43eac.js",
+    "main.js": "/static/js/main.2695a47a.js",
     "static/media/phoenix-36-logo.png": "/static/media/phoenix-36-logo.391c13ba45b6db12530e.png",
     "index.html": "/index.html",
     "main.2b149342.css.map": "/static/css/main.2b149342.css.map",
-    "main.84c43eac.js.map": "/static/js/main.84c43eac.js.map"
+    "main.2695a47a.js.map": "/static/js/main.2695a47a.js.map"
   },
   "entrypoints": [
     "static/css/main.2b149342.css",
-    "static/js/main.84c43eac.js"
+    "static/js/main.2695a47a.js"
   ]
 }
