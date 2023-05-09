@@ -29,7 +29,7 @@ function App() {
     }
 
     console.log(data)
-    axios.post('https://utwsdapp1.azurewebsites.net:8080/api/login',data)
+    axios.post('https://utwsdapp1.azurewebsites.net/api/login',data)
     .then(response=>{
 
       console.log(response)
